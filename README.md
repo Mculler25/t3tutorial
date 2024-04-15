@@ -4,7 +4,7 @@
 
 - [x] Make it deploy
 - [x] scaffold basic ui with mock data
-- [ ] set up a database
+- [x] set up a database
 - [ ] attach database to ui
 - [ ] add authentication
 - [ ] add image upload

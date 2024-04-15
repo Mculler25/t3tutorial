@@ -19,9 +19,8 @@ const mockImages = mockUrls.map((url, index) => ({
 
 export default async function HomePage() {
 
-  const posts = await db.query.posts.findMany();
+  const posts = await db.query.images.findMany();
 
-  console.log(posts);
 
   return (
     <main className="">
@@ -33,11 +32,6 @@ export default async function HomePage() {
             </div>
           ))
         }
-        {[...mockImages, ...mockImages, ...mockImages].map((image, index) => (
-          <div key={image.id + "-" + index} className="w-48">
-            <img src={image.url} />
-          </div>
-        ))}
       </div>
     </main>
   );
